@@ -319,13 +319,13 @@
             <div class="contact__container bd-grid">
                 <form method="POST" name="contact" data-netlify="true" class="contact__form">
                     <div class="contact__inputs">
-                        <input type="text" placeholder="Nombre" autocomplete="off" class="contact__input">
-                        <input type="email" placeholder="E-mail" autocomplete="off" class="contact__input">
+                        <input type="text" placeholder="Nombre" autocomplete="off" class="contact__input" name="nombre">
+                        <input type="email" placeholder="E-mail" autocomplete="off" class="contact__input" name="email">
                     </div>
 
-                    <input type="text" placeholder="Proyecto en mente" class="contact__input">
+                    <input type="text" placeholder="Proyecto en mente" class="contact__input" name="proyecto">
                     
-                    <textarea name="" id="" cols="0" rows="10" placeholder="Mensaje" class="contact__input"></textarea>
+                    <textarea name="mensaje" id="" cols="0" rows="10" placeholder="Mensaje" class="contact__input"></textarea>
 
                     <input type="submit" value="Enviar Mensaje" class="button contact__button">
                 </form>
