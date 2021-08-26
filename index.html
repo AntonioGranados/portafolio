@@ -317,17 +317,18 @@
             <h2 class="section-title">Para poder atenderte</h2>
 
             <div class="contact__container bd-grid">
-                <form method="POST" name="contact" data-netlify="true" class="contact__form">
+                <form method="POST" action="https://formsubmit.co/ajgranadosm@gmail.com" class="contact__form">
                     <div class="contact__inputs">
-                        <input type="text" placeholder="Nombre" autocomplete="off" class="contact__input" name="nombre">
-                        <input type="email" placeholder="E-mail" autocomplete="off" class="contact__input" name="email">
+                        <input type="text" placeholder="Nombre" autocomplete="off" class="contact__input" name="nombre" required>
+                        <input type="email" placeholder="E-mail" autocomplete="off" class="contact__input" name="email" required>
                     </div>
 
-                    <input type="text" placeholder="Proyecto en mente" class="contact__input" name="proyecto">
+                    <input type="text" placeholder="Proyecto en mente" class="contact__input" name="proyecto" autocomplete="off" required>
                     
-                    <textarea name="mensaje" id="" cols="0" rows="10" placeholder="Mensaje" class="contact__input"></textarea>
+                    <textarea name="mensaje" id="" cols="0" rows="10" placeholder="Mensaje" class="contact__input" autocomplete="off" required></textarea>
 
                     <input type="submit" value="Enviar Mensaje" class="button contact__button">
+                    <input type="hidden" name="_captcha" value="false">
                 </form>
 
                 <div>
